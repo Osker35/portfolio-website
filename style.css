@@ -1,0 +1,110 @@
+body, html {
+    background-color: #0d0d0d;
+    color: #00ff00; /* Yeşil yazı rengi */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#terminal-container {
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100%;
+    cursor: text;
+}
+
+#terminal {
+    height: 100%;
+    overflow-y: auto;
+}
+
+p {
+    margin: 0;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+
+.prompt {
+    color: #00ffff; /* Turquoise prompt color */
+    margin-right: 8px;
+}
+
+.prompt-line {
+    display: flex;
+    align-items: center;
+}
+
+#input {
+    background-color: transparent;
+    border: none;
+    color: #00ff00;
+    font-family: inherit;
+    font-size: inherit;
+    outline: none;
+    flex-grow: 1; /* Cover the rest of the line */
+}
+
+/* Flashing cursor effect */
+#input:focus {
+    animation: blink-caret 1s step-end infinite;
+    border-right: .15em solid #00ff00;
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #00ff00; }
+}
+
+/* Style for the help menu */
+.help-command {
+    color: #ff00ff; /* Purple Color */
+    font-weight: bold;
+}
+
+.help-description {
+    color: #ffffff; /* White Color */
+}
+
+/* Old TV Effect */
+body::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5) 1px,
+        transparent 1px,
+        transparent 2px
+    );
+    pointer-events: none; /* This way, it does not block effect clicks. */
+    z-index: 10;
+}
+
+pre {
+    font-family: 'VT323', monospace; /* It should be the same as your current font. */
+}
+
+#boot-screen {
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    font-family: 'VT323', monospace;
+    color: #00ff00;
+    padding: 20px;
+}
+
+/* Hide the main terminal at the beginning */
+#terminal-container {
+    display: none;
+}
