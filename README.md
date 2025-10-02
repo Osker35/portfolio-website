@@ -1,6 +1,5 @@
 # Cybersecurity Interactive Terminal Portfolio
 
-![Portfolio Demo GIF](https://github.com/osker35/portfolio-website/blob/main/demo.gif?raw=true) 
 This is not your average portfolio. It's an immersive, interactive terminal experience designed to showcase my skills in web development and my passion for cybersecurity. The entire site is built to mimic a retro BASH terminal, complete with a system boot-up sequence and custom commands.
 
 ## ✨ Features
@@ -70,3 +69,5 @@ Want to fork this and make it your own? Here’s how:
 ## 📄 License
 
 This project is distributed under the MIT License. See the `LICENSE` file for more information.
+
+![Portfolio Demo GIF](https://github.com/osker35/portfolio-website/blob/main/demo.gif?raw=true) 
