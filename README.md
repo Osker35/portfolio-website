@@ -3,8 +3,6 @@
 ![Portfolio Demo GIF](https://github.com/[your-github-username]/[your-repo-name]/blob/main/demo.gif?raw=true) 
 This is not your average portfolio. It's an immersive, interactive terminal experience designed to showcase my skills in web development and my passion for cybersecurity. The entire site is built to mimic a retro BASH terminal, complete with a system boot-up sequence and custom commands.
 
-**[View Live Demo](https://osker35.github.io/repository-adin/)** ---
-
 ## ✨ Features
 
 * **Animated Boot-Up Intro:** A realistic BIOS/boot sequence that runs before the terminal loads.
